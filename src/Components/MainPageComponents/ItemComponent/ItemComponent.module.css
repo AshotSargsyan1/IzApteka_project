@@ -1,0 +1,77 @@
+.itemMainDiv {
+    width: 170px;
+    height: 330px;
+    margin-right: 30px;
+}
+
+.itemImg {
+    width: 130px;
+    height: 130px;
+    margin: 20px 20px 0 20px;
+}
+
+.title {
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 18px;
+    width: 155px;
+    height: 38px;
+    margin-bottom: 0;
+}
+
+.smallTitle {
+    color: #00395D;
+    font-size: 10px;
+    font-family: Montserrat Medium;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+.price {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    width: 147px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+
+.basketButton {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.notItem {
+    display: flex;
+    width: 101px;
+    height: 12px;
+    color: #F67575;
+    font-size: 8px;
+    font-family: Montserrat Medium;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.buttonsForCount {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    align-items: center
+}
+
+.cardBody {
+    padding: 15px 8px 20px 8px;
+}

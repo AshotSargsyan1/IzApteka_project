@@ -1,0 +1,20 @@
+.linkPaths {
+    color: #00395D;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+
+.linkPaths:first-child {
+    border-bottom: 2px solid #00395D;
+    align-self: stretch;
+}
+
+.handlerForLink {
+    margin-bottom: 24px;
+}

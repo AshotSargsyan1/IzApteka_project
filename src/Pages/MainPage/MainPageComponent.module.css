@@ -1,0 +1,69 @@
+h3 {
+    color: #00395D;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 0;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.pillButton {
+    padding: 12px;
+    background-color: #F5F5F5;
+    color: #000;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.hr {
+    height: 1px;
+    align-self: stretch;
+}
+
+.listNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.whatIsApteka {
+    height: 270px;
+    padding: 25px 0;
+}
+
+.p {
+    width: 1170px;
+    height: 171px;
+    color: #00395D;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+
+.secondP {
+    color: #00395D;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 24px;
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+}
+
+.b {
+    font-weight: 700;
+}

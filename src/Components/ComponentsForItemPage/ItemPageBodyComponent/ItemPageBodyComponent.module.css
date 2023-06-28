@@ -1,0 +1,152 @@
+.howUseSide {
+    margin: 27px 0 33px 0;
+    color: #00395D;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.compoundTitle {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 16px
+}
+
+.compoundP {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 25px;
+}
+
+.effect {
+    display: flex;
+    width: 451px;
+    height: 45px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutEffect {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 25px
+}
+
+.indications {
+    display: flex;
+    width: 189px;
+    height: 45px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.contraindication {
+    display: flex;
+    width: 276px;
+    height: 45px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutContraindication {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 25px
+}
+
+.sideEffects {
+    display: flex;
+    width: 288px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutsideEffects {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin: 0;
+}
+
+.aboutsideEffectsList {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 70px;
+    padding-left: inherit
+}
+
+.productsOfTheDay {
+    color: #00395D;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 50px 0 25px 0
+}
+
+.buyWithIt {
+    color: #00395D;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 50px 0 25px 0
+}
+
+.accordion{
+    border: 0px;
+}

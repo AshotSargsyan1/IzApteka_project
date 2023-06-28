@@ -1,0 +1,42 @@
+.mainRow {
+    display: inline-flex;
+    height: 44px;
+    padding: 12px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cityMainLetter {
+    display: flex;
+}
+
+.cityLetter {
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 24px;
+    margin-right: 7px;
+}
+
+.cityName {
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 24px;
+    text-decoration-line: underline;
+    margin-right: 682px;
+}
+
+.contactUs {
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 51px;
+}
+
+.contactUs:last-child {
+    margin-right: 0;
+}

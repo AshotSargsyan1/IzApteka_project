@@ -1,0 +1,22 @@
+.catalogDiv {
+    border-radius: 3px;
+    border: 1px solid #00395D;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 18px;
+    color: #00395D;
+    height: 30px;
+    margin-right:  32px;
+    text-decoration: none;
+}
+
+.catalogDiv:first-child{
+    margin-left: 0
+}
