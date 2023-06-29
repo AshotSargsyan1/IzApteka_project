@@ -9,10 +9,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <div style={{ width: '73%', margin: '0 auto' }}>
-      <App />
+    <div style={{ width: '1600px', margin: '0 auto' }}>
+        <App />
     </div>
-    <div style={{width: '100%', backgroundColor: '#00395D'}}>
+    <div style={{ width: '1600px', backgroundColor: '#00395D', margin: '0 auto' }}>
       <FooterComponent />
     </div>
   </BrowserRouter>

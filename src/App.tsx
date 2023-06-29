@@ -2,7 +2,10 @@ import RoutingComponent from "./Route/RoutingComponent";
 
 function App() {
   return (
-    <RoutingComponent />
+    <div style={{ width: '73%', margin: '0 auto' }}>
+      <RoutingComponent />
+    </div>
+
   );
 }
 

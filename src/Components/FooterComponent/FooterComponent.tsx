@@ -1,4 +1,3 @@
-import { Col, Row } from "react-bootstrap"
 import classes from './FooterComponent.module.css'
 import { Link } from "react-router-dom"
 
