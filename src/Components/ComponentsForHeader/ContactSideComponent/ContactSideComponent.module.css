@@ -1,10 +1,10 @@
 .mainRow {
-    display: inline-flex;
+    display: flex;
     height: 44px;
     padding: 12px 0px 0px 0px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
+    margin-bottom: 55px
 }
 
 .cityMainLetter {
@@ -17,6 +17,8 @@
     font-family: Montserrat;
     line-height: 24px;
     margin-right: 7px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .cityName {
@@ -25,7 +27,7 @@
     font-family: Montserrat;
     line-height: 24px;
     text-decoration-line: underline;
-    margin-right: 682px;
+    font-style: normal;
 }
 
 .contactUs {
@@ -35,6 +37,8 @@
     line-height: 24px;
     text-decoration: none;
     margin-right: 51px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .contactUs:last-child {

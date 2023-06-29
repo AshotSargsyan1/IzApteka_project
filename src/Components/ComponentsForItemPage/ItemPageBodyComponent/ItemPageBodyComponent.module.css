@@ -13,28 +13,19 @@
     font-family: Montserrat;
     font-weight: 500;
     line-height: 30px;
-    margin-bottom: 16px
 }
 
 .compoundP {
-    display: flex;
-    width: 1170px;
-    flex-direction: column;
-    flex-shrink: 0;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
     line-height: 18px;
-    margin-bottom: 25px;
+    width: 100%;
+    padding-left: 0;
+    height: 74px;
 }
 
 .effect {
-    display: flex;
-    width: 451px;
-    height: 45px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
     color: #00395D;
     font-size: 24px;
     font-family: Montserrat;
@@ -43,23 +34,17 @@
 }
 
 .aboutEffect {
-    display: flex;
-    width: 1170px;
-    flex-direction: column;
+    width: 100%;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
     line-height: 18px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    padding-left: 0;
+    height: 146px;
 }
 
 .indications {
-    display: flex;
-    width: 189px;
-    height: 45px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
     color: #00395D;
     font-size: 24px;
     font-family: Montserrat;
@@ -68,12 +53,6 @@
 }
 
 .contraindication {
-    display: flex;
-    width: 276px;
-    height: 45px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
     color: #00395D;
     font-size: 24px;
     font-family: Montserrat;
@@ -82,23 +61,17 @@
 }
 
 .aboutContraindication {
-    display: flex;
-    width: 1170px;
-    flex-direction: column;
-    flex-shrink: 0;
+    width: 100%;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
     line-height: 18px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    padding-left: 0;
+    height: 314px;
 }
 
 .sideEffects {
-    display: flex;
-    width: 288px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
     color: #00395D;
     font-size: 24px;
     font-family: Montserrat;
@@ -107,28 +80,24 @@
 }
 
 .aboutsideEffects {
-    display: flex;
-    width: 1170px;
-    flex-direction: column;
+    width: 100%;
     flex-shrink: 0;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
     line-height: 18px;
-    margin: 0;
+    padding-left: 0;
+    height: 290px;
 }
 
 .aboutsideEffectsList {
-    display: flex;
-    width: 1170px;
-    flex-direction: column;
-    flex-shrink: 0;
+    width: 100%;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
     line-height: 18px;
     margin-bottom: 70px;
-    padding-left: inherit
+    padding-left: 15px
 }
 
 .productsOfTheDay {
@@ -147,6 +116,7 @@
     margin: 50px 0 25px 0
 }
 
-.accordion{
-    border: 0px;
+.accordionItem {
+    margin-bottom: 25px;
+    border: none;
 }

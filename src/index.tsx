@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <div className="container">
+    <div style = {{width: '73%', margin: '0 auto'}}>
       <App />
     </div>
   </BrowserRouter>

@@ -1,0 +1,36 @@
+.advertisingDiv {
+    border-radius: 4px;
+    background: #25A9EB;
+    height: 120px;
+    text-align: center;
+    line-height: 8px;
+    padding: 20px 0 5px 0;
+}
+
+
+.advertisingText {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advertisingTextMainText {
+    color: #FFF;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.small {
+    color: #FFF;
+    font-size: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+}

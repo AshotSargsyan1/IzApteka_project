@@ -1,0 +1,30 @@
+.carousel-indicators {
+    width: 64px;
+    height: 8px;
+    margin: 0 auto
+}
+
+.carousel .carousel-indicators button {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 57, 93, 1);
+    background-color: rgba(0, 57, 93, 1);
+}
+
+.carousel .carousel-control-prev {
+    display: none;
+}
+
+.carousel .carousel-control-next-icon {
+    display: none;
+}
+
+.carousel .carousel-control-next {
+    width: 18px;
+    position: absolute;
+    z-index: 10;
+    right: -50px;
+    background-image: url('../../../../public/assets/vector.png');
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-25%);
+}

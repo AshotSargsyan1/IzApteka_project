@@ -1,0 +1,16 @@
+.listDivs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listDivs div{
+    width: 100%;
+}
+
+.listDivs div ul {
+    padding: 0;
+}
+
+.listDivs div ul li {
+    list-style-type: none;
+}

@@ -1,10 +1,18 @@
 .compilationForImages {
-    height: 739px;
+    height: 740px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .compilationImage {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 370px;
+    width: 350px;
     height: 250px
+}
+
+.wholeImage {
+    width: 350px;
+    height: 100px;
+    border: 1px solid;
+    margin-bottom: 30px;
 }

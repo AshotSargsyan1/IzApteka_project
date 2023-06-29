@@ -62,7 +62,6 @@
 
 .price {
     display: flex;
-    width: 78px;
     height: 35px;
     flex-direction: column;
     color: #00395D;
@@ -74,7 +73,7 @@
 .priceDiv {
     display: flex;
     align-items: end;
-    margin-right: 111px;
+    margin-right: 105px;
 }
 
 .buySide {

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { Card } from "react-bootstrap"
 import classes from './CatalogLinksComponent.module.css'
 
 const CatalogLinksComponent = () => {
@@ -16,7 +15,7 @@ const CatalogLinksComponent = () => {
     ]
 
     return (
-        <div style={{display: 'flex'}}>
+        <div className={classes.catalogsWrapper}>
             {
                 catalogLinks.map(item => {
                     return (
@@ -26,7 +25,7 @@ const CatalogLinksComponent = () => {
                     )
                 })
             }
-        </div >
+        </div>
     )
 }
 

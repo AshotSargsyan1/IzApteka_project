@@ -17,10 +17,13 @@ const ImageForCompilationComponent: React.FC = (): JSX.Element => {
             {
                 imagesForcompilation.map(img => {
                     return (
-                        <Figure.Image className={classes.compilationImage}
-                            alt="Error"
-                            src={img}
-                        />
+                        <div>
+                            <Figure.Image className={classes.compilationImage}
+                                alt="Error"
+                                src={img}
+                            />
+                            <div className={classes.wholeImage}></div>
+                        </div>
                     )
                 })
             }

@@ -5,36 +5,36 @@ import { Accordion } from 'react-bootstrap'
 const ItemPageBodyComponent: React.FC = (): JSX.Element => {
     return (
         <>
-            <Accordion defaultActiveKey="0" className={classes.accordion}>
+            <Accordion defaultActiveKey="0">
                 <h1 className={classes.howUseSide}>Инструкция по применению</h1>
 
-                <Accordion.Item eventKey="0" style={{marginBottom: '25px'}}>
-                    <Accordion.Header>Состав</Accordion.Header>
-                    <Accordion.Body>
+                <Accordion.Item eventKey="0" className={classes.accordionItem}>
+                    <Accordion.Header className={classes.compoundTitle}>Состав</Accordion.Header>
+                    <Accordion.Body className={classes.compoundP}>
                         Одна капсула содержит действующее вещество – ибупрофен 200 мг, вспомогательные вещества: макрогол-600 218,33 мг, калия гидроксид 25,6 мг, вода 17,07 мг; оболочка капсулы: желатин 119,8 мг, сорбитол 76 % раствор 58,19 мг, краситель пунцовый [Понсо 4R] (E124) 0,485 мг, вода 15,02 мг, чернила белые [Опакод WB NS-78-18011] (вода 48 %, титана диоксид (E171) 29 %, пропиленгликоль 10 %, изопропанол 8 %, гипромеллоза 5 %).
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header>Фармакологическое действие</Accordion.Header>
+
+                <Accordion.Item eventKey="1" className={classes.accordionItem}>
+                    <Accordion.Header className={classes.effect}>Фармакологическое действие</Accordion.Header>
                     <Accordion.Body className={classes.aboutEffect}>
                         Капсула с жидким действующим веществом в двойной концентрации (400 мг ибупрофена) воздействует прямо на источник боли, помогая избавиться от нее. Механизм действия ибупрофена, производного пропионовой кислоты из группы нестероидных противовоспалительных препаратов (НПВП), обусловлен ингибированием синтеза простагландинов – медиаторов боли, воспаления и гипертермической реакции. Неизбирательно блокирует циклооксигеназу 1 (ЦОГ-1) и циклооксигеназу 2 (ЦОГ-2), вследствие чего тормозит синтез простагландинов. Оказывает быстрое направленное действие против боли (обезболивающее), жаропонижающее и противовоспалительное действие. Кроме того, ибупрофен обратимо ингибирует агрегацию тромбоцитов.
                     </Accordion.Body>
                 </Accordion.Item>
 
-                <Accordion.Item eventKey="2">
-                    <Accordion.Header>Показания</Accordion.Header>
+                <Accordion.Item eventKey="2" className={classes.accordionItem}>
+                    <Accordion.Header className={classes.indications}>Показания</Accordion.Header>
                 </Accordion.Item>
 
-                <Accordion.Item eventKey="3">
-                    <Accordion.Header>Противопоказания</Accordion.Header>
+                <Accordion.Item eventKey="3" className={classes.accordionItem}>
+                    <Accordion.Header className={classes.contraindication}>Противопоказания</Accordion.Header>
                     <Accordion.Body className={classes.aboutContraindication}>
                         С осторожностью При наличии состояний, указанных в данном разделе, перед применением препарата следует проконсультироваться с врачом. Одновременный прием других НПВП, наличие в анамнезе однократного эпизода язвенной болезни желудка или язвенного кровотечения ЖКТ; гастрит, энтерит, колит, наличие инфекции Helicobacter pylori, язвенный колит; бронхиальная астма или аллергические заболевания в стадии обострения или в анамнезе – возможно развитие бронхоспазма; системная красная волчанка или смешанное заболевание соединительной ткани (синдром Шарпа) – повышен риск асептического менингита; ветряная оспа; почечная недостаточность, в том числе при обезвоживании (клиренс креатинина менее 30-60 мл/мин), нефротический синдром, печеночная недостаточность, цирроз печени с портальной гипертензией, гипербилирубинемия, артериальная гипертензия и/или сердечная недостаточность, цереброваскулярные заболевания, заболевания крови неясной этиологии (лейкопения и анемия), тяжелые соматические заболевания, дислипидемия/гиперлипидемия, сахарный диабет, заболевания периферических артерий, курение, частое употребление алкоголя, одновременный прием лекарственных средств, которые могут увеличить риск возникновения язв или кровотечения, в частности, пероральных глюкокортикостероидов (в том числе преднизолона), антикоагулянтов (в том числе варфарина), селективных ингибиторов обратного захвата серотонина (в том числе циталопрама, флуоксетина, пароксетина, сертралина) или антиагрегантов (в том числе ацетилсалициловой кислоты, клопидогрела), беременность I-II триместр, период грудного вскармливания, пожилой возраст.
                     </Accordion.Body>
                 </Accordion.Item>
 
-
-                <Accordion.Item eventKey="4">
-                    <Accordion.Header>Побочные действия</Accordion.Header>
+                <Accordion.Item eventKey="4" style={{ border: 'none' }}>
+                    <Accordion.Header className={classes.sideEffects}>Побочные действия</Accordion.Header>
                     <Accordion.Body className={classes.aboutsideEffects}>
                         Риск возникновения побочных эффектов можно свести к минимуму, если принимать препарат коротким курсом, в минимальной эффективной дозе, необходимой для устранения симптомов.
                         <ul className={classes.aboutsideEffectsList}>

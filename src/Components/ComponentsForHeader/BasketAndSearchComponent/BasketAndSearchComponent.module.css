@@ -1,32 +1,14 @@
-.logo {
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
-    margin-right: 12px;
-}
-
-.logo2 {
-    width: 114px;
-    height: 25px;
-    flex-shrink: 0;
-}
-
-.logoWrapper {
-    margin-right: 630px;
-}
-
 .basketAndNameButton {
     width: 170px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
     color: #00395D
 }
 
 .searchInput {
-    width: 990px;
+    width: auto;
     height: 54px;
     flex-shrink: 0;
     margin-right: 10px;
@@ -39,7 +21,6 @@
     align-items: center;
     width: 167px;
     height: 54px;
-    flex-shrink: 0;
     background-color: #F5F5F5;
     color: #00395D;
     font-size: 20px;
@@ -49,31 +30,39 @@
 }
 
 .searchInput2 {
-    width: 512px;
+    width: 630px !important;
     height: 54px;
-    justify-content: center;
-    flex-shrink: 0;
     padding-left: 33px;
     padding-right: 154px;
 }
 
 .dropdownButton {
-    width: 124px;
-    height: 54px;
-    flex-shrink: 0;
+    width: 125px;
+    height: 55px;
     background-color: #F5F5F5;
     color: #00395D;
     text-align: center;
-    font-size: 16px;
     font-family: Montserrat;
     font-weight: 700;
 }
 
 .findButton {
     width: 170px;
-    height: 54px;
-    flex-shrink: 0;
-    font-size: 16px;
+    height: 55px;
     font-family: Montserrat;
     font-weight: 700;
+}
+
+.basketAndSearchMainDiv {
+    height: 260px;
+}
+
+.logoSide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchSide {
+    display: flex;
+    justify-content: space-between;
 }

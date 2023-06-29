@@ -1,7 +1,6 @@
 .itemMainDiv {
     width: 170px;
     height: 330px;
-    margin-right: 30px;
 }
 
 .itemImg {
@@ -11,14 +10,17 @@
 }
 
 .title {
+    display: flex;
+    width: 155px;
+    height: 38px;
+    flex-direction: column;
+    flex-shrink: 0;
     color: #00395D;
     font-size: 14px;
     font-family: Montserrat;
+    font-style: normal;
     font-weight: 700;
     line-height: 18px;
-    width: 155px;
-    height: 38px;
-    margin-bottom: 0;
 }
 
 .smallTitle {
@@ -41,16 +43,15 @@
     height: 32px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+    margin-bottom: 8px
 }
-
-
 
 .basketButton {
     display: flex;
     width: 70px;
     height: 30px;
     margin-left: 15px;
+    text-align: center;
 }
 
 .notItem {
@@ -74,4 +75,15 @@
 
 .cardBody {
     padding: 15px 8px 20px 8px;
+}
+
+.itemCount {
+    margin: 0 10px 0;
+    color: #00395D;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }

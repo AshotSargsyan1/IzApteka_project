@@ -12,6 +12,7 @@ const PartnersComponent: React.FC = () => {
 
     return (
         <div className={classes.ownPartners}>
+            <h3 style={{marginBottom: '25px'}}>Наши партнёры</h3>
             <Figure className={classes.compilationForImages}>
                 {
                     imagesForCompilation.map(img => {

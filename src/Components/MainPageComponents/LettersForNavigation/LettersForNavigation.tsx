@@ -8,7 +8,9 @@ const LettersForNavigation = () => {
     return (
         <div className={classes.wrapperForLetter}>
             <small className={classes.searchWithLetter}>Искать по алфавиту </small>
-            {lettersForNavigation.map(letter => <Link to='#' className={classes.letter}>{letter}</Link>)}
+            <div className={classes.letters}>
+                {lettersForNavigation.map(letter => <Link to='#' className={classes.letter}>{letter}</Link>)}
+            </div>
         </div >
     )
 }
