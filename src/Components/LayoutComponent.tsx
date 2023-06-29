@@ -7,7 +7,6 @@ const LayoutComponent: React.FC = () => {
         <>
             <HeaderComponent />
             <Outlet />
-            <FooterComponent />
         </>
     )
 }
