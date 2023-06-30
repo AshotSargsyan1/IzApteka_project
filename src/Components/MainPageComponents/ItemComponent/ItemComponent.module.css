@@ -55,8 +55,6 @@
 }
 
 .notItem {
-    display: flex;
-    width: 101px;
     height: 12px;
     color: #F67575;
     font-size: 8px;
@@ -64,6 +62,10 @@
     font-weight: 500;
     line-height: 18px;
     margin-bottom: 4px;
+}
+
+.notItem ul{
+    padding-left: 10px
 }
 
 .buttonsForCount {
@@ -86,4 +88,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+}
+
+.incrAndDecrBtn {
+    cursor: pointer;
+}
+
+.notItemHidden {
+    height: 12px;
+    color: #F67575;
+    font-size: 8px;
+    font-family: Montserrat Medium;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 4px;
+    visibility: hidden;
 }

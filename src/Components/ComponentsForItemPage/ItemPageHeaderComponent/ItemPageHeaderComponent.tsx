@@ -30,9 +30,9 @@ const ItemPageHeaderComponent: React.FC = (): JSX.Element => {
                         </div>
                         <div>
                             <div className={classes.buySide}>
-                                <img className={classes.incrAndDecrButton} src='/assets/logo3.svg' />
+                                <img className={classes.incrAndDecrBtn} src='/assets/logo3.svg' />
                                 <span>2</span>
-                                <img className={classes.incrAndDecrButton} src='/assets/logo4.svg' />
+                                <img className={classes.incrAndDecrBtn} src='/assets/logo4.svg' />
                             </div>
                             <Button className={classes.addBasketBtn}>В корзину</Button>
                         </div>

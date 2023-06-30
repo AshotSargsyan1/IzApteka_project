@@ -32,7 +32,7 @@ const MainPageComponent: React.FC = (): JSX.Element => {
             <h3>Как сделать заказ</h3>
             <LinkPathsComponent />
             <CarouselComponent />
-            <h3 style={{ margin: '75px 0' }}>Подборки</h3>
+            <h3 style={{ margin: '75px 0px 25px' }}>Подборки</h3>
             <ImageForCompilationComponent />
             <PartnersComponent />
             <div className={classes.whatIsApteka}>

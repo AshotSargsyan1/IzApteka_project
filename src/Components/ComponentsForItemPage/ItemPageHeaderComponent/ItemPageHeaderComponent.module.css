@@ -115,3 +115,7 @@
 .headerSide {
     display: flex;
 }
+
+.incrAndDecrBtn {
+    cursor: pointer;
+}
