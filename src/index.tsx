@@ -1,20 +1,21 @@
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
+import 'styles/index.css';
+import App from 'App';
+
+import '../src/i18n/18n'
 import { BrowserRouter } from 'react-router-dom'
-import FooterComponent from './Components/FooterComponent/FooterComponent';
+import { Provider } from 'react-redux';
+import { store } from 'store/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <BrowserRouter>
-    <div style={{ width: '1600px', margin: '0 auto' }}>
-        <App />
-    </div>
-    <div style={{ width: '1600px', backgroundColor: '#00395D', margin: '0 auto' }}>
-      <FooterComponent />
-    </div>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>
 );
 

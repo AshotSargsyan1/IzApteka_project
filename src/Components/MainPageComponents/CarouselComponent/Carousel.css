@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 10;
     right: -50px;
-    background-image: url('../../../../public/assets/vector.png');
+    background-image: url('../../../../public/assets/images/vector.png');
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-25%);

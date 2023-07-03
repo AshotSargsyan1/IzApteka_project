@@ -1,0 +1,1 @@
+export { AdvertisingComponent } from "./AdvertisingComponent";

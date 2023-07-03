@@ -1,0 +1,1 @@
+export { ItemComponent } from "./ItemComponent";

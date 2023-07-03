@@ -1,11 +1,8 @@
-import RoutingComponent from "./Route/RoutingComponent";
+import MainRoute from "route/MainRoute";
 
 function App() {
   return (
-    <div style={{ width: '73%', margin: '0 auto' }}>
-      <RoutingComponent />
-    </div>
-
+    <MainRoute />
   );
 }
 

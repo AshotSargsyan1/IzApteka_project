@@ -1,99 +1,98 @@
-import { useState } from 'react';
-import ItemComponent from '../ItemComponent/ItemComponent'
+import { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap'
+import { useAppDispatch, useAppSelector } from 'hooks/index';
+
+// import { CatalogList, itemsSliceThunk } from '../../../store/Slices/ItemsSlice';
+import { ItemComponent } from '../ItemComponent'
 import classes from './CarouselComponent.module.css'
 import './Carousel.css'
 
+
+
+
 export interface IitemsType {
-    title: string,
+    itemName: string,
     img: string,
-    smallTitle: string,
+    pharmCompany: string,
     haveOrNotItem?: boolean,
-    price: number
+    price: number,
+    id: number
 }
-const CarouselComponent: React.FC = (): JSX.Element => {
+
+export const CarouselComponent: React.FC = (): JSX.Element => {
+    const dispatch = useAppDispatch()
+    // const itemsList: CatalogList = useAppSelector(state => state.itemsList)
+    // useEffect(() => {
+    //     dispatch(itemsSliceThunk())
+    // }, [])
+
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex: number) => {
         setIndex(selectedIndex);
     };
-    const items: IitemsType[] = [
-        {
-            title: 'Хилак Форте Капли, 100мл',
-            img: 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-            smallTitle: 'Teva(Israel)',
-            haveOrNotItem: false,
-            price: 527
-        }
-    ]
-
 
     return (
         <Carousel activeIndex={index} onSelect={handleSelect} className={classes.carouselDiv}>
             <Carousel.Item>
                 <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
                 </div>
             </Carousel.Item>
-            <Carousel.Item >
+            <Carousel.Item>
                 <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
                 </div>
             </Carousel.Item>
-            <Carousel.Item >
-
+            <Carousel.Item>
                 <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                </div>
-
-            </Carousel.Item>
-            <Carousel.Item >
-                <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                </div>
-
-            </Carousel.Item>
-            <Carousel.Item >
-                <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
                 </div>
             </Carousel.Item>
-            <Carousel.Item >
+            <Carousel.Item>
                 <div className={classes.items}>
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
-                    <ItemComponent {...items[0]} />
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
+                </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className={classes.items}>
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
+                </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <div className={classes.items}>
+                    {/* <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} />
+                    <ItemComponent {...itemsList.itemList[0]} /> */}
                 </div>
             </Carousel.Item>
         </Carousel>
     )
 }
-
-export default CarouselComponent

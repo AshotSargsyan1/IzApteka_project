@@ -1,7 +1,8 @@
 import { Figure } from "react-bootstrap"
+
 import classes from './ImageForCompilationComponent.module.css'
 
-const ImageForCompilationComponent: React.FC = (): JSX.Element => {
+export const ImageForCompilationComponent: React.FC = (): JSX.Element => {
 
     type compilationType = {
         imageUrl: string,
@@ -58,5 +59,3 @@ const ImageForCompilationComponent: React.FC = (): JSX.Element => {
         </Figure >
     )
 }
-
-export default ImageForCompilationComponent

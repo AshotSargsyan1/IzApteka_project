@@ -1,25 +1,25 @@
 import { Link } from "react-router-dom"
-import classes from './CatalogLinksComponent.module.css'
+import { useAppDispatch, useAppSelector } from "hooks/index"
+import { useEffect } from "react"
 
-const CatalogLinksComponent = () => {
-    const catalogLinks: string[] = [
-        'Сиропы',
-        'Витамины',
-        'От кашля',
-        'Желудок',
-        'Головная боль',
-        'Сухая кожа',
-        'Шампуни',
-        'Капли',
-        'Крем от морщин'
-    ]
+import classes from './CatalogLinksComponent.module.css'
+import { getCatalogsThunk } from "store/slices/CatalogSlice"
+
+export const CatalogLinksComponent = () => {
+
+    const dispatch = useAppDispatch()
+    const catalogList = useAppSelector(state => state.catalogList.list)
+
+    useEffect(() => {
+        dispatch(getCatalogsThunk())
+    }, [])
 
     return (
         <div className={classes.catalogsWrapper}>
             {
-                catalogLinks.map(item => {
+                catalogList.map((item, index) => {
                     return (
-                        <Link to='#' className={classes.catalogDiv}>
+                        <Link key={index} to='#' className={classes.catalogDiv}>
                             {item}
                         </Link>
                     )
@@ -28,5 +28,3 @@ const CatalogLinksComponent = () => {
         </div>
     )
 }
-
-export default CatalogLinksComponent

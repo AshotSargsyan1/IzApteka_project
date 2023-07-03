@@ -6,13 +6,13 @@
 }
 
 .compilationImage {
-    width: 370px;
-    height: 249px;
+    width: 360px;
+    height: 250px;
     margin-bottom: 30px;
 }
 
 .bottomSide {
-    width: 370px;
+    width: 360px;
     height: 100px;
     border: 1px solid;
     display: flex;

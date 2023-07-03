@@ -1,7 +1,11 @@
-import classes from './FooterComponent.module.css'
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
-const FooterComponent: React.FC = (): JSX.Element => {
+import classes from './FooterComponent.module.css'
+
+export const FooterComponent: React.FC = (): JSX.Element => {
+
+    const { t } = useTranslation()
 
     return (
         <div style={{ width: '73%', margin: '0 auto' }}>
@@ -33,32 +37,31 @@ const FooterComponent: React.FC = (): JSX.Element => {
                         </svg>
 
                     </div>
-                    <p className={classes.ourCity}>Ваш город։ &nbsp;<u>Москва</u></p>
+                    <p className={classes.ourCity}>{t("contactSide.city")} &nbsp;<u>Москва</u></p>
                     <p className={classes.phoneNumber}>+7 (495) 123-45-67</p>
                 </div>
                 <div className={classes.footerTitles}>
-                    <Link className={classes.link} to='#'>Лекарства</Link>
-                    <Link className={classes.link} to='#'>БАД</Link>
-                    <Link className={classes.link} to='#'>Линзы</Link>
-                    <Link className={classes.link} to='#'>Новорождённые</Link>
-                    <Link className={classes.link} to='#'>Гигиена</Link>
+                    <Link className={classes.link} to='#'>{t("footer.medications")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.bad")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.lenses")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.newBorns")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.hygiene")}</Link>
                 </div>
                 <div className={classes.footerTitles}>
-                    <Link className={classes.link} to='#'>Доставка</Link>
-                    <Link className={classes.link} to='#'>Самовывоз</Link>
-                    <Link className={classes.link} to='#'>Поставщикам</Link>
-                    <Link className={classes.link} to='#'>Юридическим лицам</Link>
-                    <Link className={classes.link} to='#'>Лицензия и реквизиты</Link>
+                    <Link className={classes.link} to='#'>{t("contactSide.delivery")}</Link>
+                    <Link className={classes.link} to='#'>{t("contactSide.pickup")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.suppliers")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.forLegalEntities")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.licenseAndDetails")}</Link>
                 </div>
                 <div className={classes.footerTitles}>
-                    <Link className={classes.link} to='#'>О компании</Link>
-                    <Link className={classes.link} to='#'>Вакансии</Link>
-                    <Link className={classes.link} to='#'>Задать вопрос</Link>
-                    <Link className={classes.link} to='#'>Пользовательское соглашение</Link>
+                    <Link className={classes.link} to='#'>{t("footer.aboutCompany")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.advertising")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.jobs")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.askAQuestion")}</Link>
+                    <Link className={classes.link} to='#'>{t("footer.termsOfUse")}</Link>
                 </div>
             </div>
         </div>
     )
 }
-
-export default FooterComponent

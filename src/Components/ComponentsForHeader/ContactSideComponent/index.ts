@@ -1,0 +1,1 @@
+export { ContactSideComponent } from "./ContactSideComponent";

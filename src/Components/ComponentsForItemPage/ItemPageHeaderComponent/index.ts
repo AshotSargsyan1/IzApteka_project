@@ -1,0 +1,1 @@
+export { ItemPageHeaderComponent } from "./ItemPageHeaderComponent";

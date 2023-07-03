@@ -1,0 +1,84 @@
+.advertisingDiv {
+    border-radius: 4px;
+    background: #25A9EB;
+    height: 120px;
+    text-align: center;
+    line-height: 8px;
+    padding: 20px 0 5px 0;
+    position: relative;
+}
+
+
+.advertisingText {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advertisingTextMainText {
+    color: #FFF;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.small {
+    color: #FFF;
+    font-size: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.firstPill{
+    position: absolute;
+    top: 70px;
+    left: 12px;
+    bottom: 9px;
+}
+
+.firstPill2{
+    position: absolute;
+    top: 18px;
+    left: 107px;
+    bottom: 68px;
+    transform: rotate(-90deg);
+}
+
+.firstPill3{
+    position: absolute;
+    top: 73px;
+    left: 240px;
+    bottom: 13px;
+    transform: rotate(-180deg);
+}
+
+.firstPill4{
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    bottom: 15px;
+    transform: rotate(-90deg);
+}
+
+.firstPill5{
+    position: absolute;
+    top: 9px;
+    right: 117px;
+    bottom: 75px;
+    transform: rotate(-180deg);
+}
+
+.firstPill6{
+    position: absolute;
+    top: 73px;
+    right: 240px;
+    bottom: 13px;
+    transform: rotate(90deg);
+}

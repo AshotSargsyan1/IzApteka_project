@@ -1,7 +1,7 @@
-import BasketAndSearchComponent from "../ComponentsForHeader/BasketAndSearchComponent/BasketAndSearchComponent"
-import ContactSideComponent from "../ComponentsForHeader/ContactSideComponent/ContactSideComponent"
+import { BasketAndSearchComponent } from "../ComponentsForHeader/BasketAndSearchComponent"
+import { ContactSideComponent } from "../ComponentsForHeader/ContactSideComponent"
 
-const HeaderComponent: React.FC = (): JSX.Element => {
+export const HeaderComponent: React.FC = (): JSX.Element => {
     return (
         <>
             <ContactSideComponent />
@@ -9,5 +9,3 @@ const HeaderComponent: React.FC = (): JSX.Element => {
         </>
     )
 }
-
-export default HeaderComponent

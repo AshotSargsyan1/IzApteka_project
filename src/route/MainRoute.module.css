@@ -1,0 +1,10 @@
+.containerForMainSide {
+    width: 73%;
+    margin: 0 auto
+}
+
+.footerSide {
+    width: 100%;
+    background-color: #00395D; 
+    margin: 0 auto
+}

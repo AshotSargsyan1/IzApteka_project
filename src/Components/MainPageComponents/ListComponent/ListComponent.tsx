@@ -1,6 +1,6 @@
 import classes from './ListComponent.module.css'
 
-const ListComponent: React.FC = (): JSX.Element => {
+export const ListComponent: React.FC = (): JSX.Element => {
     return (
         <div className={classes.listDivs}>
             <div >
@@ -52,5 +52,3 @@ const ListComponent: React.FC = (): JSX.Element => {
         </div>
     )
 }
-
-export default ListComponent

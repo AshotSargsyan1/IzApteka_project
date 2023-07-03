@@ -1,18 +1,22 @@
 import { Figure } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
+
 import classes from './PartnersComponent.module.css'
 
-const PartnersComponent: React.FC = () => {
+export const PartnersComponent: React.FC = () => {
+
+    const { t } = useTranslation()
 
     const imagesForCompilation: string[] = [
-        '/assets/logo5.png',
-        '/assets/logo6.png',
-        '/assets/logo7.png',
-        '/assets/logo8.png',
+        '/assets/images/logo5.png',
+        '/assets/images/logo6.png',
+        '/assets/images/logo7.png',
+        '/assets/images/logo8.png',
     ]
 
     return (
         <div className={classes.ownPartners}>
-            <h3 style={{marginBottom: '25px'}}>Наши партнёры</h3>
+            <h3 style={{marginBottom: '25px'}}>{t("partners.ourPartners")}</h3>
             <Figure className={classes.compilationForImages}>
                 {
                     imagesForCompilation.map(img => {
@@ -26,5 +30,3 @@ const PartnersComponent: React.FC = () => {
         </div>
     )
 }
-
-export default PartnersComponent
