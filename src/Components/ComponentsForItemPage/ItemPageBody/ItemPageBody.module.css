@@ -1,0 +1,122 @@
+.howUseSide {
+    margin: 27px 0 33px 0;
+    color: #00395D;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.compoundTitle {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.compoundP {
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.effect {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutEffect {
+    width: 100%;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 25px;
+    padding-left: 0;
+    margin-bottom: 25px;
+
+}
+
+.indications {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.contraindication {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutContraindication {
+    width: 100%;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 25px;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.sideEffects {
+    color: #00395D;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.aboutsideEffects {
+    width: 100%;
+    flex-shrink: 0;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    padding-left: 0;
+}
+
+.aboutsideEffectsList {
+    width: 100%;
+    color: #00395D;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    margin-bottom: 70px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.productsOfTheDay {
+    color: #00395D;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 50px 0 25px 0
+}
+
+.buyWithIt {
+    color: #00395D;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 50px 0 25px 0
+}
+
+.accordionItem {
+    border: none;
+}

@@ -2,13 +2,16 @@ import { useTranslation } from 'react-i18next'
 import { Button, ButtonGroup } from 'react-bootstrap'
 
 import classes from './MainPage.module.css';
-import { ImageForCompilationComponent } from 'Components/MainPageComponents/ImageForCompilation'
-import { PartnersComponent } from 'Components/MainPageComponents/PartnersComponent'
-import { LinkPathsComponent } from 'Components/MainPageComponents/LinkPathsComponent'
-import { CarouselComponent } from 'Components/MainPageComponents/CarouselComponent'
-import { LettersForNavigation } from 'Components/MainPageComponents/LettersForNavigation'
-import { AdvertisingComponent } from 'Components/AdvertisingComponent';
-import { ListComponent } from 'Components/MainPageComponents/ListComponent';
+import {
+    Advertising,
+    ImageForCompilation,
+    Partners,
+    LinkPaths,
+    CarouselC,
+    LettersForNavigation,
+    List
+}
+    from 'Components';
 
 export const MainPage: React.FC = (): JSX.Element => {
 
@@ -16,13 +19,13 @@ export const MainPage: React.FC = (): JSX.Element => {
 
     return (
         <>
-            <AdvertisingComponent />
+            <Advertising />
             <h3 className={classes.h3}>{t("mainPage.productsOfTheDay")}</h3>
-            <LinkPathsComponent />
-            <CarouselComponent />
+            <LinkPaths />
+            <CarouselC />
             <h3>{t("mainPage.makeAnOrder")}</h3>
-            <LinkPathsComponent />
-            <CarouselComponent />
+            <LinkPaths />
+            <CarouselC />
             <h3>{t("mainPage.searchForDrugs")}</h3>
             <ButtonGroup className={classes.buttonGroup} aria-label="Basic example">
                 <Button variant='secondary' className={classes.pillButton}>Лекарствы и БАДы</Button>
@@ -31,13 +34,13 @@ export const MainPage: React.FC = (): JSX.Element => {
             </ButtonGroup>
             <LettersForNavigation />
             <hr className={classes.hr} />
-            <ListComponent />
+            <List />
             <h3>{t("mainPage.makeAnOrder")}</h3>
-            <LinkPathsComponent />
-            <CarouselComponent />
+            <LinkPaths />
+            <CarouselC />
             <h3 style={{ margin: '75px 0px 25px' }}>{t("mainPage.collections")}</h3>
-            <ImageForCompilationComponent />
-            <PartnersComponent />
+            <ImageForCompilation />
+            <Partners />
             <div className={classes.whatIsApteka}>
                 <h3 style={{ marginTop: 0 }}>{t("mainPage.whatIsIzApteki")}</h3>
                 <div className={classes.p}>

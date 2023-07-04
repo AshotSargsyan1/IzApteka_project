@@ -1,1 +1,0 @@
-export { LinkPathsComponent } from "./LinkPathsComponent";

@@ -1,1 +1,0 @@
-export { PartnersComponent } from "./PartnersComponent";

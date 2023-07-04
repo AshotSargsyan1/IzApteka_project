@@ -3,9 +3,9 @@ import { useEffect } from "react"
 import { useTranslation } from 'react-i18next'
 
 import { MainPage } from "pages/MainPage"
-import LayoutComponent from "Components/LayoutComponent"
+import { MainLayout } from "pages/MainLayout"
 import { ItemPage } from "pages/ItemPage"
-import { FooterComponent } from "Components/FooterComponent"
+import { Footer } from "Components/Footer"
 import classes from './MainRoute.module.css'
 
 const MainRoute: React.FC = () => {
@@ -18,14 +18,14 @@ const MainRoute: React.FC = () => {
         <>
             <div className={classes.containerForMainSide}>
                 <Routes>
-                    <Route element={<LayoutComponent />}>
+                    <Route element={<MainLayout />}>
                         <Route path='/' element={<MainPage />} />
                         <Route path='/item/:id' element={<ItemPage />} />
                     </Route>
                 </Routes>
             </div>
             <div className={classes.footerSide}>
-                <FooterComponent />
+                <Footer />
             </div>
         </>
     )

@@ -1,1 +1,1 @@
-export { ContactSideComponent } from "./ContactSideComponent";
+export { ContactSide } from './ContactSide'

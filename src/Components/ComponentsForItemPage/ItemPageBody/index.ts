@@ -1,0 +1,1 @@
+export { ItemPageBody } from "./ItemPageBody";

@@ -1,1 +1,0 @@
-export { CatalogLinksComponent } from "./CatalogLinksComponent";

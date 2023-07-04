@@ -1,1 +1,1 @@
-export { ImageForCompilationComponent } from "./ImageForCompilationComponent";
+export { ImageForCompilation } from "./ImageForCompilation";

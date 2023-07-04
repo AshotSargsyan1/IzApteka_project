@@ -1,1 +1,0 @@
-export { BasketAndSearchComponent } from "./BasketAndSearchComponent";

@@ -1,9 +1,9 @@
 import { AnyAction, PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { TCatalogList } from "models/types/catalogTypes";
 
 import { server } from 'services'
-import { CatalogList } from "models/interfaces";
 
-const initialState: CatalogList = {
+const initialState: TCatalogList = {
     list: []
 }
 

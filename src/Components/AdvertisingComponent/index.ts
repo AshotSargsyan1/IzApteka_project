@@ -1,1 +1,0 @@
-export { AdvertisingComponent } from "./AdvertisingComponent";
