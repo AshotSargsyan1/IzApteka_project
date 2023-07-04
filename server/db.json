@@ -228,5 +228,137 @@
                 "Реакции повышенной чувствительности."
             ]
         }
-    ]
+    ],
+    "catalog": {
+        "medications": {
+            "obstetricsGynecology": {
+                "name": "Акушерство, гинекология",
+                "items": {}
+            },
+            "allergy": {
+                "name": "Аллергия",
+                "items": {}
+            },
+            "anesthesiaResuscitation": {
+                "name": "Аллергия Анестезия, реанимация",
+                "items": {}
+            },
+            "antibiotics": {
+                "name": "Антибиотики",
+                "items": {}
+            },
+            "bloodDiseases": {
+                "name": "Болезни крови",
+                "items": {}
+            },
+            "painTemperature": {
+                "name": "Боль, температура",
+                "items": {}
+            },
+            "haemorrhoids": {
+                "name": "Геморрой",
+                "items": {}
+            },
+            "eyes": {
+                "name": "Глаза",
+                "items": {}
+            },
+            "wormsLiceScabies": {
+                "name": "Глисты, вши, чесотка",
+                "items": {}
+            },
+            "homeopathy": {
+                "name": "Гомеопатия",
+                "items": {}
+            },
+            "diabetes": {
+                "name": "Диабет",
+                "items": {}
+            },
+            "diagnosticTools": {
+                "name": "Диагностические средства",
+                "items": {}
+            },
+            "respiratorySystem": {
+                "name": " Дыхательная система",
+                "items": {}
+            },
+            "stomachIntestinesLiver": {
+                "name": "Желудок, кишечник, печень",
+                "items": {}
+            },
+            "teethAndMouth": {
+                "name": "Зубы и рот",
+                "items": {}
+            },
+            "immuneSystem": {
+                "name": "Иммунная система",
+                "items": {}
+            },
+            "leather": {
+                "name": "Кожа",
+                "items": {}
+            },
+            "genitourinarySystem": {
+                "name": "Мочеполовая система",
+                "items": {}
+            },
+            "metabolicDisorders": {
+                "name": "Нарушения обмена веществ",
+                "items": {}
+            },
+            "neurologyPsychiatry": {
+                "name": "Неврология, психиатрия",
+                "items": {}
+            },
+            "disinfectants": {
+                "name": "Обеззараживающие средства",
+                "items": {}
+            },
+            "oncology": {
+                "name": "Онкология",
+                "items": {}
+            },
+            "poisoning": {
+                "name": "Отравления",
+                "items": {}
+            },
+            "nutrientMixtures": {
+                "name": "Питательные смеси",
+                "items": {}
+            },
+            "antivirals": {
+                "name": "Противовирусные средства",
+                "items": {}
+            },
+            "antifungals": {
+                "name": "Противогрибковые средства",
+                "items": {}
+            },
+            "miscellaneous": {
+                "name": "Разное",
+                "items": {}
+            },
+            "cardiovascular": {
+                "name": "Сердечно-сосудистые",
+                "items": {}
+            },
+            "trichomoniasisAndMalaria": {
+                "name": "Трихомоноз и малярия",
+                "items": {}
+            },
+            "earThroatNose": {
+                "name": "Ухо, горло, нос",
+                "items": {}
+            },
+            "endocrinology": {
+                "name": "Эндокринология",
+                "items": {}
+            }
+        },
+        "vitaminsAndDietarySupplements": {},
+        "beauty": {},
+        "hygiene": {},
+        "motherAndChild": {}
+    }
 }

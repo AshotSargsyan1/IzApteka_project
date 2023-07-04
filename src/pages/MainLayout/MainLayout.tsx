@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-import {Header} from '../../Components/Header'
+import { Header } from 'Components'
 
 export const MainLayout: React.FC = () => {
     return (

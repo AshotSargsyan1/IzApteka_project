@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Navbar, Image, Button, Dropdown, InputGroup, Form } from 'react-bootstrap'
 import { useTranslation } from "react-i18next"
 
@@ -6,6 +6,12 @@ import classes from './BasketAndSearch.module.css'
 import { CatalogLinks } from "Components"
 
 export const BasketAndSearch: React.FC = (): JSX.Element => {
+
+    const navigate = useNavigate()
+
+    const openCatalogPage = () => {
+        navigate('/catalog')
+    }
 
     const { t } = useTranslation()
 
@@ -41,7 +47,7 @@ export const BasketAndSearch: React.FC = (): JSX.Element => {
 
             <div className={classes.searchSide}>
                 <InputGroup className={classes.searchInput}>
-                    <InputGroup.Text className={classes.searchInputText} id="inputGroup-sizing-default">
+                    <InputGroup.Text className={classes.searchInputText} id="inputGroup-sizing-default" onClick={openCatalogPage}>
                         {t("basketAndSearch.catalog")}
                     </InputGroup.Text>
                     <Form.Control

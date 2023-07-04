@@ -2,10 +2,8 @@ import { Routes, Route } from "react-router-dom"
 import { useEffect } from "react"
 import { useTranslation } from 'react-i18next'
 
-import { MainPage } from "pages/MainPage"
-import { MainLayout } from "pages/MainLayout"
-import { ItemPage } from "pages/ItemPage"
-import { Footer } from "Components/Footer"
+import { MainPage, MainLayout, ItemPage, CatalogPage } from "pages"
+import { Footer } from "Components"
 import classes from './MainRoute.module.css'
 
 const MainRoute: React.FC = () => {
@@ -21,6 +19,7 @@ const MainRoute: React.FC = () => {
                     <Route element={<MainLayout />}>
                         <Route path='/' element={<MainPage />} />
                         <Route path='/item/:id' element={<ItemPage />} />
+                        <Route path='/catalog' element={<CatalogPage />} />
                     </Route>
                 </Routes>
             </div>

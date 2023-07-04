@@ -13,3 +13,4 @@ export * from './MainPageComponents/LettersForNavigation';
 export * from './MainPageComponents/LinkPaths';
 export * from './MainPageComponents/List';
 export * from './MainPageComponents/Partners';
+export * from './ForCatalogPage/Catalogs';
