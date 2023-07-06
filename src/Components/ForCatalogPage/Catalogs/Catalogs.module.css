@@ -1,0 +1,44 @@
+.titles {
+    width: 300px;
+    flex-shrink: 0;
+    color: #00395D;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+.columnsList {
+    color: #00395D;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.itemsMainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    text-decoration: none;
+    color: #00395D;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}

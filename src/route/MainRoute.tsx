@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom"
 import { useEffect } from "react"
 import { useTranslation } from 'react-i18next'
 
-import { MainPage, MainLayout, ItemPage, CatalogPage } from "pages"
+import { MainPage, MainLayout, ItemPage, CatalogPage, CatalogItemPage } from "pages"
 import { Footer } from "Components"
 import classes from './MainRoute.module.css'
 
@@ -20,6 +20,7 @@ const MainRoute: React.FC = () => {
                         <Route path='/' element={<MainPage />} />
                         <Route path='/item/:id' element={<ItemPage />} />
                         <Route path='/catalog' element={<CatalogPage />} />
+                        <Route path='/catalog/:id' element={<CatalogItemPage />} />
                     </Route>
                 </Routes>
             </div>

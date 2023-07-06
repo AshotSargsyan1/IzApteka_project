@@ -53,9 +53,8 @@ export const CatalogSlice = createSlice({
             .addCase(itemsSliceThunk.fulfilled, (state, action) => {
                 state.itemList = action.payload
             })
-            
+
             .addCase(getAboutItemSliceThunk.fulfilled, (state, action) => {
-                console.log(action.payload)
                 state.aboutItem = action.payload
             })
     }

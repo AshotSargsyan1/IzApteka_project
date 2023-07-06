@@ -1,0 +1,30 @@
+.mainDiv {
+    display: flex;
+}
+
+.catalogNavigationSide {
+    max-width: 250px;
+    min-width: 250px;
+    border: 1px solid;
+    margin-right: 50px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inputGroup {
+    height: 55px;
+    margin-bottom: 30px;
+}
+
+.searchAndItems {
+    width: 100%;
+}
+
+.searchButton {
+    width: 95px;
+}

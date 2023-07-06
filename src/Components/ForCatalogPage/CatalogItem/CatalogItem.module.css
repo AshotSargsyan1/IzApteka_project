@@ -1,0 +1,45 @@
+.pathSpan {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.card {
+    min-width: 265px;
+    max-width: 265px;
+    min-height: 323px;
+    max-height: 323px;
+}
+
+.cardTitle {
+    width: 240px;
+    height: 38px;
+    color: #00395D;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.smallTitle {
+    width: 162px;
+    height: 19px;
+    color: #00395D;
+    font-family: Montserrat Medium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #00395D;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
