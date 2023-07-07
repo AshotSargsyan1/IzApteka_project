@@ -5,13 +5,13 @@
 .catalogNavigationSide {
     max-width: 250px;
     min-width: 250px;
-    border: 1px solid;
     margin-right: 50px;
 }
 
 .items {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -27,4 +27,55 @@
 
 .searchButton {
     width: 95px;
+}
+
+.pathSpan {
+    width: 1170px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.checkboxDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkboxDiv p {
+    color: #26364B;
+    font-family: Montserrat Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: '15px',
+}
+
+.checkboxDiv input {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    width: 100%;
+    color: #00395D;
+    font-family: Montserrat;
+    font-style: normal;
+    padding: 0;
+    background-color: white;
+    border: 0px solid;
+}
+
+.catalogItems {
+    display: flex;
+    width: 251px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
 }

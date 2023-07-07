@@ -1,10 +1,10 @@
-interface Iitem {
+export interface Iitem {
     title: string,
     company: string,
     price: number
 }
 
-interface IItemForCatalog {
+export interface IItemForCatalog {
     id: number,
     name: string,
     items: {

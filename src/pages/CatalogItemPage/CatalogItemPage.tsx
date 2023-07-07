@@ -1,16 +1,67 @@
-import { useLocation, useParams } from 'react-router-dom'
 import classes from './CatalogItemPage.module.css'
 import { CatalogItem } from 'Components/ForCatalogPage/CatalogItem'
-import { Button, Form, InputGroup } from 'react-bootstrap'
+import { Accordion, Button, Form, InputGroup, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { useAppDispatch, useAppSelector } from 'hooks'
+import { useEffect, useRef, useState } from 'react'
+import { ItemsCatalogSliceThunk } from 'store/slices/ItemsCatalogSlice'
+import { AccordionSide } from 'Components'
 
 export const CatalogItemPage = () => {
-  const { id } = useParams()
+
+
+  const dispatch = useAppDispatch()
+  const [dropdownBtnNames, setDropdownBtnNames] = useState<any>([]);
+  const selector = useAppSelector(state => state.itemsCatalog.list)
+  const [dataForParse, setDataForParse] = useState<any>({
+    lsitName: '',
+    name: ''
+  })
+
+  useEffect(() => {
+    dispatch(ItemsCatalogSliceThunk())
+  }, [])
+let a;
+  useEffect(() => {
+    const dropdownBtns: string[] = []
+    if (Object.keys(selector).length) {
+      for (const names in selector) {
+        dropdownBtns.push(names)
+      }
+      setDropdownBtnNames(dropdownBtns);
+
+    }
+
+  }, [selector]);
+
+
 
   return (
     <div>
       <span className={classes.pathSpan}>Главная &gt;  Каталог &gt;  Гигиена</span>
       <div className={classes.mainDiv}>
-        <div className={classes.catalogNavigationSide}></div>
+        <div className={classes.catalogNavigationSide}>
+          <hr style={{ marginTop: 0 }} />
+          <div className={classes.checkboxDiv}>
+            <p>Только доступные к доставке</p>
+            <Form>
+              <Form.Check
+                type={'checkbox'}
+                id={'default-checkbox'}
+                className={classes.checkboxForm}
+              />
+            </Form>
+          </div>
+          <hr />
+
+          <Accordion defaultActiveKey="0">
+            <AccordionSide type={dropdownBtnNames} data={selector} dataForParseProp={(data: any) => {
+              setDataForParse(data)
+            }} />
+          </Accordion>
+
+
+
+        </div>
         <div className={classes.searchAndItems}>
           <div className={classes.inputDiv}>
             <InputGroup className={classes.inputGroup}>
@@ -28,8 +79,8 @@ export const CatalogItemPage = () => {
             </InputGroup>
           </div>
           <div className={classes.items}>
-            <CatalogItem />
-            <CatalogItem />
+            {/* {dataForParse.listName != '' && dataForParse.name != '' ? a = (selector as any)[dataForParse.listName] : null} */}
+            {/* {console.log(a)} */}
             <CatalogItem />
           </div>
         </div>
