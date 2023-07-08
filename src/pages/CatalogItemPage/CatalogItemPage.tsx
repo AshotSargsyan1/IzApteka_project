@@ -5,35 +5,27 @@ import { useAppDispatch, useAppSelector } from 'hooks'
 import { useEffect, useRef, useState } from 'react'
 import { ItemsCatalogSliceThunk } from 'store/slices/ItemsCatalogSlice'
 import { AccordionSide } from 'Components'
+import { useParams } from 'react-router-dom'
 
 export const CatalogItemPage = () => {
-
+  const { id } = useParams()
+  const categoryItems: any = []
 
   const dispatch = useAppDispatch()
-  const [dropdownBtnNames, setDropdownBtnNames] = useState<any>([]);
   const selector = useAppSelector(state => state.itemsCatalog.list)
-  const [dataForParse, setDataForParse] = useState<any>({
-    lsitName: '',
-    name: ''
+
+  selector.map((data: any) => {
+    const filteredItems = data.list.filter((item: any) => {
+      return item.id === Number(id);
+    });
+    categoryItems.push(...filteredItems);
   })
+
+
 
   useEffect(() => {
     dispatch(ItemsCatalogSliceThunk())
   }, [])
-let a;
-  useEffect(() => {
-    const dropdownBtns: string[] = []
-    if (Object.keys(selector).length) {
-      for (const names in selector) {
-        dropdownBtns.push(names)
-      }
-      setDropdownBtnNames(dropdownBtns);
-
-    }
-
-  }, [selector]);
-
-
 
   return (
     <div>
@@ -54,9 +46,7 @@ let a;
           <hr />
 
           <Accordion defaultActiveKey="0">
-            <AccordionSide type={dropdownBtnNames} data={selector} dataForParseProp={(data: any) => {
-              setDataForParse(data)
-            }} />
+            <AccordionSide data={selector} />
           </Accordion>
 
 
@@ -79,9 +69,15 @@ let a;
             </InputGroup>
           </div>
           <div className={classes.items}>
-            {/* {dataForParse.listName != '' && dataForParse.name != '' ? a = (selector as any)[dataForParse.listName] : null} */}
-            {/* {console.log(a)} */}
-            <CatalogItem />
+            {categoryItems.length &&
+              categoryItems[0].items.map((item: any) => {
+                console.log(item)
+                return <CatalogItem {...item} />
+              })
+            }
+
+
+
           </div>
         </div>
       </div>

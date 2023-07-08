@@ -1,41 +1,27 @@
 import { Accordion, ListGroup, ListGroupItem } from 'react-bootstrap'
 
-import { useState } from 'react'
 
-export const AccordionSide: React.FC<any> = ({ type, data, dataForParseProp }): JSX.Element => {
-
-    const [clickedData, setClickedData] = useState({
-        listName: '',
-        name: ''
-    })
+export const AccordionSide: React.FC<any> = ({ data }): JSX.Element => {
 
     return (
         <>
             {
-                type.map((name: any, index: any) => {
+                data.map((category: any) => {
                     return (
-                        <Accordion.Item eventKey={index} onClick={() => {
-                            setClickedData((prev) => ({
-                                ...prev, listName: name
-                            }))
-                        }}>
-                            <Accordion>
-                                <Accordion.Header>{(data as any)[name].listName}</Accordion.Header>
+                        <Accordion.Item eventKey={(Math.random()).toString()}>
+                            <Accordion defaultActiveKey={(Math.random()).toString()}>
+                                <Accordion.Header>{category.name}</Accordion.Header>
                                 <Accordion.Body>
-                                    {(data as any)[name].list.map((item: any, index: any) => {
-                                        return <Accordion>
-                                            <Accordion.Item eventKey={index} onClick={() => {
-                                                setClickedData((prev) => ({
-                                                    ...prev, name: item
-                                                }))
-                                                console.log(item)
-                                            }}>
-                                                <Accordion>
+                                    {category.list.map((item: any) => {
+                                        return <Accordion defaultActiveKey={(Math.random()).toString()}>
+                                            <Accordion.Item eventKey={(Math.random()).toString()}>
+                                                <Accordion defaultActiveKey={(Math.random()).toString()}>
                                                     <Accordion.Header>{item.name}</Accordion.Header>
                                                     <Accordion.Body>
-                                                        {item.items.hasOwnProperty('list') &&
+                                                        {
+                                                            item.items.length &&
                                                             <ListGroup>
-                                                                {item.items.list.map((item: any) => {
+                                                                {item.items.map((item: any) => {
                                                                     return <ListGroupItem>{item.title}</ListGroupItem>
                                                                 })}
                                                             </ListGroup>
@@ -51,7 +37,6 @@ export const AccordionSide: React.FC<any> = ({ type, data, dataForParseProp }): 
                     )
                 })
             }
-            {dataForParseProp(clickedData)}
         </>
     )
 }

@@ -1,34 +1,32 @@
 import { AnyAction, PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { ICatalog, IItemsCatalog } from "models/interfaces/itemsCatalogInterfaces";
+
+import { ICatalog, IaboutCategory } from "models/interfaces/itemsCatalogInterfaces";
 
 import { server } from 'services'
 
-const initialState: IItemsCatalog = {
-    list: {
-        medications: {
-            listName: '',
-            list: []
-        },
-        vitaminsAndDietarySupplements: {
-            listName: '',
-            list: []
-        },
-        beauty: {
-            listName: '',
-            list: []
-        },
-        hygiene: {
-            listName: '',
-            list: []
-        },
-        motherAndChild: {
-            listName: '',
-            list: []
-        },
-    }
+const initialState: ICatalog = {
+    list: [
+        {
+            id: 0,
+            name: '',
+            list: [{
+                id: 0,
+                name: '',
+                items: [
+                    {
+                        title: '',
+                        company: '',
+                        price: 0
+                    }
+                ]
+            }
+            ]
+        }
+    ]
 }
 
-export const ItemsCatalogSliceThunk = createAsyncThunk<ICatalog, undefined, { rejectValue: string }>(
+
+export const ItemsCatalogSliceThunk = createAsyncThunk<IaboutCategory[], undefined, { rejectValue: string }>(
     'ItemsCatalogSlice/ItemsCatalogSliceThunk',
     async (_, { rejectWithValue }) => {
         const response = await server.get('/catalog')

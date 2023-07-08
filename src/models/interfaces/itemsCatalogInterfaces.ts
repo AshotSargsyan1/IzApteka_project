@@ -1,3 +1,9 @@
+export interface IaboutCategory {
+    id: number,
+    name: string,
+    list: IItemForCatalog[]
+}
+
 export interface Iitem {
     title: string,
     company: string,
@@ -7,24 +13,9 @@ export interface Iitem {
 export interface IItemForCatalog {
     id: number,
     name: string,
-    items: {
-        list: Iitem[]
-    }
-}
-
-export interface IAboutItemObject {
-    listName: string,
-    list: IItemForCatalog[]
+    items?: Iitem[] | []
 }
 
 export interface ICatalog {
-    medications: IAboutItemObject,
-    vitaminsAndDietarySupplements: IAboutItemObject,
-    beauty: IAboutItemObject,
-    hygiene: IAboutItemObject,
-    motherAndChild: IAboutItemObject
-}
-
-export interface IItemsCatalog {
-    list: ICatalog
+    list: IaboutCategory[]
 }

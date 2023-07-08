@@ -229,449 +229,452 @@
             ]
         }
     ],
-    "catalog": {
-        "medications": {
-            "listName": "Лекарственные препараты",
+    "catalog": [
+        {
+            "id": 101,
+            "name": "Лекарственные препараты",
             "list": [
                 {
                     "id": 1,
                     "name": "Акушерство, гинекология",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 2,
                     "name": "Аллергия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 3,
                     "name": "Аллергия Анестезия, реанимация",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 4,
                     "name": "Антибиотики",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 5,
                     "name": "Болезни крови",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 6,
                     "name": "Боль, температура",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 7,
                     "name": "Геморрой",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 8,
                     "name": "Глаза",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 9,
                     "name": "Глисты, вши, чесотка",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 10,
                     "name": "Гомеопатия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 11,
                     "name": "Диабет",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 12,
                     "name": "Диагностические средства",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 13,
                     "name": "Дыхательная система",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 14,
                     "name": "Желудок, кишечник, печень",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 15,
                     "name": "Зубы и рот",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 16,
                     "name": "Иммунная система",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 17,
                     "name": "Кожа",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 18,
                     "name": "Мочеполовая система",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 19,
                     "name": "Нарушения обмена веществ",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 20,
                     "name": "Неврология, психиатрия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 21,
                     "name": "Обеззараживающие средства",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 22,
                     "name": "Онкология",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 23,
                     "name": "Отравления",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 24,
                     "name": "Питательные смеси",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 25,
                     "name": "Противовирусные средства",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 26,
                     "name": "Противогрибковые средства",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 27,
                     "name": "Разное",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 28,
                     "name": "Сердечно-сосудистые",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 29,
                     "name": "Трихомоноз и малярия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 30,
                     "name": "Ухо, горло, нос",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 31,
                     "name": "Эндокринология",
-                    "items": {}
+                    "items": []
                 }
             ]
         },
-        "vitaminsAndDietarySupplements": {
-            "listName": "Витамины и БАД",
+        {
+            "id": 102,
+            "name": "Витамины и БАД",
             "list": [
                 {
                     "id": 32,
                     "name": "Биологически активные добавки",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 33,
                     "name": "Витамины и минералы",
-                    "items": {}
+                    "items": []
                 }
             ]
         },
-        "beauty": {
-            "listName": "Красота",
+        {
+            "id": 103,
+            "name": "Красота",
             "list": [
                 {
                     "id": 34,
                     "name": "Ароматерапия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 35,
                     "name": "Волосы",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 36,
                     "name": "Аксессуары",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 37,
                     "name": "Бальзамы и кондиционеры",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 38,
                     "name": "Интенсивный уход",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 39,
                     "name": "Маски",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 40,
                     "name": "Окрашивание бровей и ресниц",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 41,
                     "name": "Окрашивание и тонирование",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 42,
                     "name": "Стайлинг",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 43,
                     "name": "Бальзамы и кондиционеры",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 44,
                     "name": "Интенсивный уход",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 45,
                     "name": "Маски",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 46,
                     "name": "Окрашивание бровей и ресниц",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 47,
                     "name": "Стайлинг",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 48,
                     "name": "Сухие шампуни",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 49,
                     "name": "Шампуни",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 50,
                     "name": "Депиляция и бритье",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 51,
                     "name": "Загар",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 52,
                     "name": "Макияж",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 53,
                     "name": "Маникюр и педикюр",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 54,
                     "name": "Подарочные наборы",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 55,
                     "name": "Товары для мужчин",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 56,
                     "name": "Уход за лицом",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 57,
                     "name": "Уход за телом",
-                    "items": {}
+                    "items": []
                 }
             ]
         },
-        "hygiene": {
-            "listName": "Гигиена",
+        {
+            "id": 104,
+            "name": "Гигиена",
             "list": [
                 {
                     "id": 58,
                     "name": "Антибактериальные средства гигиены",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 59,
                     "name": "Атмосфера в доме",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 60,
                     "name": "Ватные и бумажные изделия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 61,
                     "name": "Гигиена дома",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 62,
                     "name": "Дезодоранты",
-                    "items": {
-                        "list": [
-                            {
-                                "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 290
-                            },
-                            {
-                                "title": "Adidas Cool&Dry спрей мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 325
-                            },
-                            {
-                                "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 290
-                            },
-                            {
-                                "title": "Adidas Cool&Dry спрей мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 325
-                            },
-                            {
-                                "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 290
-                            },
-                            {
-                                "title": "Adidas Cool&Dry спрей мужской, 150 мл",
-                                "company": "Neofarm inc. (Poland)",
-                                "price": 324
-                            }
-                        ]
-                    }
+                    "items": [
+                        {
+                            "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 290
+                        },
+                        {
+                            "title": "Adidas Cool&Dry спрей мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 325
+                        },
+                        {
+                            "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 290
+                        },
+                        {
+                            "title": "Adidas Cool&Dry спрей мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 325
+                        },
+                        {
+                            "title": "Axe Дезодорант аэрозоль Голд мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 290
+                        },
+                        {
+                            "title": "Adidas Cool&Dry спрей мужской, 150 мл",
+                            "company": "Neofarm inc. (Poland)",
+                            "price": 324
+                        }
+                    ]
                 },
                 {
                     "id": 63,
                     "name": "Средства женской гигиены",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 64,
                     "name": "Средства защиты от насекомых",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 65,
                     "name": "Урологические прокладки",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 66,
                     "name": "Уход за одеждой и обувью",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 67,
                     "name": "Уход за полостью рта",
-                    "items": {}
+                    "items": []
                 }
             ]
         },
-        "motherAndChild": {
-            "listName": "Мать и дитя",
+        {
+            "id": 105,
+            "name": "Мать и дитя",
             "list": [
                 {
                     "id": 68,
                     "name": "Бытовая химия",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 69,
                     "name": "Все для кормления ребенка",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 70,
                     "name": "Все для купания ребенка",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 71,
                     "name": "Гигиена малыша",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 72,
                     "name": "Детская бытовая техника",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 73,
                     "name": "Детское питание",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 74,
                     "name": "Игрушки Кормящим и беременным",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 75,
                     "name": "Подгузники",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 76,
                     "name": "Товары для безопасности детей",
-                    "items": {}
+                    "items": []
                 },
                 {
                     "id": 77,
                     "name": "Защитные устройства",
-                    "items": {}
+                    "items": []
                 }
             ]
         }
-    }
+    ]
 }

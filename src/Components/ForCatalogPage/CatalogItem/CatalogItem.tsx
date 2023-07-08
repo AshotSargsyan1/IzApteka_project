@@ -4,21 +4,20 @@ import { Iitem } from 'models/interfaces/itemsCatalogInterfaces'
 
 import classes from './CatalogItem.module.css'
 
-export const CatalogItem: React.FC = (): JSX.Element => {
+export const CatalogItem: React.FC<any> = ({ title, company, price }): JSX.Element => {
     const { t } = useTranslation()
 
     return (
         <>
             <Card className={classes.card}>
-                {/* <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
-                    <Card.Title className={classes.cardTitle}>{item.title}</Card.Title>
+                    <Card.Title className={classes.cardTitle}>{title}</Card.Title>
                     <Card.Text className={classes.smallTitle}>
-                        {item.company}
+                        {company}
                     </Card.Text>
-                    <Card.Text className={classes.price}>{item.price} {t("item.rouble")}</Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body> */}
+                    <Card.Text className={classes.price}>{price} {t("item.rouble")}</Card.Text>
+                </Card.Body>
                 <Button variant="primary" className={classes.btn}>В корзину</Button>
             </Card>
         </>
