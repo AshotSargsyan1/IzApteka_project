@@ -5,6 +5,7 @@ export interface IaboutCategory {
 }
 
 export interface Iitem {
+    image: string,
     title: string,
     company: string,
     price: number

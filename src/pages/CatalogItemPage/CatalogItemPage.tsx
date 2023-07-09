@@ -2,30 +2,67 @@ import classes from './CatalogItemPage.module.css'
 import { CatalogItem } from 'Components/ForCatalogPage/CatalogItem'
 import { Accordion, Button, Form, InputGroup, ListGroup, ListGroupItem } from 'react-bootstrap'
 import { useAppDispatch, useAppSelector } from 'hooks'
-import { useEffect, useRef, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import { ItemsCatalogSliceThunk } from 'store/slices/ItemsCatalogSlice'
 import { AccordionSide } from 'Components'
 import { useParams } from 'react-router-dom'
+import { IItemForCatalog, IaboutCategory, Iitem } from 'models/interfaces/itemsCatalogInterfaces'
 
 export const CatalogItemPage = () => {
   const { id } = useParams()
-  const categoryItems: any = []
-
+  const [categoryItems, setCategoryItems] = useState<IItemForCatalog[]>([]);
+  const [dataForSearch, setDataForSearch] = useState<string>('')
+  const [searchedItems, setSearchedItems] = useState<Iitem[]>([])
   const dispatch = useAppDispatch()
   const selector = useAppSelector(state => state.itemsCatalog.list)
-
-  selector.map((data: any) => {
-    const filteredItems = data.list.filter((item: any) => {
-      return item.id === Number(id);
-    });
-    categoryItems.push(...filteredItems);
-  })
+  const [categoryTitle, setCategoryTitle] = useState<IItemForCatalog[]>([])
 
 
 
   useEffect(() => {
     dispatch(ItemsCatalogSliceThunk())
   }, [])
+
+  useEffect(() => {
+    if (selector.length) {
+      const filteredItems: IItemForCatalog[] = [];
+
+      selector.forEach((data: IaboutCategory) => {
+        const filtered = data.list.filter((item: IItemForCatalog) => {
+          return item.id === Number(id);
+        });
+        if (filteredItems.length > 0) {
+          setCategoryTitle(filteredItems)
+        }
+        filteredItems.push(...filtered);
+      });
+
+      setCategoryItems(filteredItems);
+    }
+  }, [selector])
+
+  useEffect(() => {
+    if (dataForSearch) {
+      const filteredItems: Iitem[] = [];
+
+      selector.forEach((category: IaboutCategory) => {
+        category.list.forEach((subCategory: IItemForCatalog) => {
+          if (subCategory.items) {
+            const filtered: Iitem[] = subCategory.items.filter((item: Iitem) => {
+              return item.title.includes(dataForSearch);
+            });
+            filteredItems.push(...filtered);
+          }
+        });
+      });
+
+      setSearchedItems((prevSearchedItems) => [...prevSearchedItems, ...filteredItems]);
+    } else {
+      setSearchedItems([]);
+    }
+  }, [dataForSearch, selector]);
+
+
 
   return (
     <div>
@@ -44,7 +81,8 @@ export const CatalogItemPage = () => {
             </Form>
           </div>
           <hr />
-
+          <h1 className={classes.catalogItems}>Каталог товаров</h1>
+          
           <Accordion defaultActiveKey="0">
             <AccordionSide data={selector} />
           </Accordion>
@@ -53,6 +91,9 @@ export const CatalogItemPage = () => {
 
         </div>
         <div className={classes.searchAndItems}>
+          <div className={classes.categoryTitleDiv}>
+            <h1 className={classes.categoryTitle}>{categoryTitle[0]?.name}</h1>
+          </div>
           <div className={classes.inputDiv}>
             <InputGroup className={classes.inputGroup}>
               <Form.Control
@@ -60,6 +101,8 @@ export const CatalogItemPage = () => {
                 placeholder="Поиск в каталоге"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
+                value={dataForSearch}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => { setDataForSearch(e.target.value) }}
               />
               <Button variant="primary" id="button-addon2" className={classes.searchButton}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -69,18 +112,19 @@ export const CatalogItemPage = () => {
             </InputGroup>
           </div>
           <div className={classes.items}>
-            {categoryItems.length &&
-              categoryItems[0].items.map((item: any) => {
-                console.log(item)
+
+            {
+              searchedItems.length > 0 ? searchedItems.map((item: Iitem) => {
                 return <CatalogItem {...item} />
-              })
+              }) : categoryItems.length > 0 && categoryItems[0]?.hasOwnProperty("items")
+                ? categoryItems[0].items?.map((item: Iitem) => {
+                  return <CatalogItem {...item} />
+                })
+                : null
             }
-
-
-
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }

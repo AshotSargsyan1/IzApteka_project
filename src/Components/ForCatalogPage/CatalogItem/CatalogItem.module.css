@@ -8,7 +8,7 @@
     max-width: 265px;
     min-height: 323px;
     max-height: 323px;
-    padding: 0 10px;
+    padding: 0 10px ;
     margin-bottom: 25px
 }
 
@@ -32,6 +32,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+    margin: 0
 }
 
 .price {
@@ -61,4 +62,18 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.image {
+    width: 200px;
+    height: 130px;
+    margin: 10px 32px 4px;
+}
+
+.cardBody{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px
 }

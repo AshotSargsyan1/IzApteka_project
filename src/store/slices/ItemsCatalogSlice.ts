@@ -14,6 +14,7 @@ const initialState: ICatalog = {
                 name: '',
                 items: [
                     {
+                        image: '',
                         title: '',
                         company: '',
                         price: 0

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import classes from './Catalogs.module.css'
 import { useAppDispatch, useAppSelector } from 'hooks'
 import { ItemsCatalogSliceThunk } from 'store/slices/ItemsCatalogSlice'
-import { useNavigate } from 'react-router-dom'
-import { IItemForCatalog, IaboutCategory } from 'models/interfaces/itemsCatalogInterfaces'
+
 
 export const Catalogs: React.FC = (): JSX.Element => {
     const dispatch = useAppDispatch()
