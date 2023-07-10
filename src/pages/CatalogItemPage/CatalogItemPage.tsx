@@ -52,12 +52,14 @@ export const CatalogItemPage: React.FC = (): JSX.Element => {
             const filtered: Iitem[] = subCategory.items.filter((item: Iitem) => {
               return item.title.includes(dataForSearch);
             });
+
+            console.log(filtered, 'filtered')
             filteredItems.push(...filtered);
           }
         });
       });
 
-      setSearchedItems((prevSearchedItems) => [...prevSearchedItems, ...filteredItems]);
+      setSearchedItems((prevSearchedItems) => filteredItems.length ? [...filteredItems]: []);
     } else {
       setSearchedItems([]);
     }
@@ -115,7 +117,7 @@ export const CatalogItemPage: React.FC = (): JSX.Element => {
           <div className={classes.items}>
 
             {
-              searchedItems.length > 0 ? searchedItems.map((item: Iitem) => {
+              dataForSearch ? searchedItems.map((item: Iitem) => {
                 return <CatalogItem {...item} />
               }) : categoryItems.length > 0 && categoryItems[0]?.hasOwnProperty("items")
                 ? categoryItems[0].items?.map((item: Iitem) => {
