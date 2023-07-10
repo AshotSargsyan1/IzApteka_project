@@ -26,16 +26,15 @@ export const AccordionSide: React.FC<any> = ({ data }): JSX.Element => {
                                                     <Accordion.Body>
                                                         {
                                                             item.items?.length ?
-                                                                item.items?.length ?
-                                                                    <ListGroup>
-                                                                        {item?.items.map((item: Iitem) => {
-                                                                            return <ListGroupItem>{item.title}</ListGroupItem>
-                                                                        })}
-                                                                    </ListGroup>
-                                                                    :
-                                                                    <ListGroup>
-                                                                        <ListGroupItem>Нету товаров</ListGroupItem>
-                                                                    </ListGroup> : null
+                                                                <ListGroup>
+                                                                    {item?.items.map((item: Iitem) => {
+                                                                        return <ListGroupItem>{item.title}</ListGroupItem>
+                                                                    })}
+                                                                </ListGroup>
+                                                                :
+                                                                <ListGroup>
+                                                                    <ListGroupItem>Нету товаров</ListGroupItem>
+                                                                </ListGroup>
                                                         }
                                                     </Accordion.Body>
                                                 </Accordion>
