@@ -18,7 +18,7 @@ export const ItemPage: React.FC = (): JSX.Element => {
 
     useEffect(() => {
         dispatch(getAboutItemSliceThunk(Number(id)))
-    }, [dispatch, aboutItemSelector])
+    }, [dispatch])
 
 
     return (

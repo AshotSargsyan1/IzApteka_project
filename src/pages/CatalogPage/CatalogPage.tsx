@@ -4,10 +4,8 @@ import classes from './CatalogPage.module.css'
 import { Catalogs } from 'Components'
 
 export const CatalogPage: React.FC = (): JSX.Element => {
-    
 
     const { t } = useTranslation()
-
     
     return (
         <>

@@ -27,7 +27,7 @@ export const BasketAndSearch: React.FC = (): JSX.Element => {
                 </div>
                 <div>
                     <Navbar.Collapse>
-                        <Button variant="light" style={{ marginRight: '30px' }} className={classes.basketAndNameButton}>
+                        <Button variant="light" className={classes.basketAndNameButton}>
                             <svg width="22" height="20" viewBox="0 0 22 20" style={{ marginRight: '10px' }} fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group">
                                     <path id="Vector" d="M15.4606 5.27277H17.3892L14.5302 0.409961C14.2999 0.0159208 13.7895 -0.118411 13.392 0.114431C12.9946 0.342795 12.8591 0.848777 13.0939 1.24282L15.4606 5.27277Z" fill="#00395D" />

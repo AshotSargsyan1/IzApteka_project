@@ -5,7 +5,12 @@
     justify-content: center;
     align-items: center;
     color: #00395D;
-    position: relative
+    position: relative;
+    margin-right: 30px
+}
+
+.basketAndNameButton:last-child{
+    margin-right: 0;
 }
 
 .searchInput {
@@ -31,7 +36,7 @@
 }
 
 .searchInput2 {
-    width: 750px !important;
+    width: 700px !important;
     height: 54px;
     padding-left: 33px;
     padding-right: 154px;

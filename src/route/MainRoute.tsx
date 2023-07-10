@@ -6,7 +6,7 @@ import { MainPage, MainLayout, ItemPage, CatalogPage, CatalogItemPage } from "pa
 import { Footer } from "Components"
 import classes from './MainRoute.module.css'
 
-const MainRoute: React.FC = () => {
+export const MainRoute: React.FC = () => {
     const { i18n } = useTranslation();
 
     useEffect(() => {
@@ -30,5 +30,3 @@ const MainRoute: React.FC = () => {
         </>
     )
 }
-
-export default MainRoute

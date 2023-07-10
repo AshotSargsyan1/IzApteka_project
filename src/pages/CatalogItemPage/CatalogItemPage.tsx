@@ -1,27 +1,28 @@
-import classes from './CatalogItemPage.module.css'
-import { CatalogItem } from 'Components/ForCatalogPage/CatalogItem'
-import { Accordion, Button, Form, InputGroup, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Accordion, Button, Form, InputGroup } from 'react-bootstrap'
 import { useAppDispatch, useAppSelector } from 'hooks'
 import { ChangeEvent, useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+
 import { ItemsCatalogSliceThunk } from 'store/slices/ItemsCatalogSlice'
 import { AccordionSide } from 'Components'
-import { useParams } from 'react-router-dom'
 import { IItemForCatalog, IaboutCategory, Iitem } from 'models/interfaces/itemsCatalogInterfaces'
+import classes from './CatalogItemPage.module.css'
+import { CatalogItem } from 'Components/ForCatalogPage/CatalogItem'
 
-export const CatalogItemPage = () => {
-  const { id } = useParams()
+export const CatalogItemPage: React.FC = (): JSX.Element => {
+  const { id } = useParams<string>()
+  const dispatch = useAppDispatch()
+  const selector = useAppSelector(state => state.itemsCatalog.list)
+
   const [categoryItems, setCategoryItems] = useState<IItemForCatalog[]>([]);
   const [dataForSearch, setDataForSearch] = useState<string>('')
   const [searchedItems, setSearchedItems] = useState<Iitem[]>([])
-  const dispatch = useAppDispatch()
-  const selector = useAppSelector(state => state.itemsCatalog.list)
   const [categoryTitle, setCategoryTitle] = useState<IItemForCatalog[]>([])
-
 
 
   useEffect(() => {
     dispatch(ItemsCatalogSliceThunk())
-  }, [])
+  }, [id])
 
   useEffect(() => {
     if (selector.length) {
@@ -82,7 +83,7 @@ export const CatalogItemPage = () => {
           </div>
           <hr />
           <h1 className={classes.catalogItems}>Каталог товаров</h1>
-          
+
           <Accordion defaultActiveKey="0">
             <AccordionSide data={selector} />
           </Accordion>

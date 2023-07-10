@@ -10,7 +10,7 @@ import { Item } from 'Components/MainPageComponents/Item/Item';
 
 export const CarouselC: React.FC = (): JSX.Element => {
     const dispatch = useAppDispatch()
-    const itemsList: IItemList = useAppSelector(state => state.itemsList)
+    const itemsList = useAppSelector(state => state.itemsList)
 
     useEffect(() => {
         dispatch(itemsSliceThunk())

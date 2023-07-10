@@ -13,9 +13,7 @@ export const ContactSide: React.FC = (): JSX.Element => {
                 <p className={classes.cityLetter}>{t("contactSide.city")}</p>
                 <p className={classes.cityName}>Москва</p>
             </div>
-            <div style={{
-                display: 'flex',
-            }}>
+            <div className={classes.contactLinks}>
                 <Link to='#' className={classes.contactUs}>{t("contactSide.pickup")}</Link>
                 <Link to='#' className={classes.contactUs}>{t("contactSide.delivery")}</Link>
                 <p className={classes.contactUs}>+7 (495) 123-45-67</p>

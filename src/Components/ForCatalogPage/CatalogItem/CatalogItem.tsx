@@ -1,10 +1,10 @@
 import { Button, Card } from "react-bootstrap"
 import { useTranslation } from "react-i18next"
-import { Iitem } from 'models/interfaces/itemsCatalogInterfaces'
 
 import classes from './CatalogItem.module.css'
+import { Iitem } from "models/interfaces/itemsCatalogInterfaces"
 
-export const CatalogItem: React.FC<any> = ({ title, company, price, image }): JSX.Element => {
+export const CatalogItem: React.FC<Iitem> = ({ title, company, price, image }): JSX.Element => {
     const { t } = useTranslation()
     return (
         <>
@@ -16,7 +16,7 @@ export const CatalogItem: React.FC<any> = ({ title, company, price, image }): JS
                         {company}
                     </Card.Text>
                     <Card.Text className={classes.price}>{price} {t("item.rouble")}</Card.Text>
-                    <Button variant="primary" className={classes.btn}>В корзину</Button>
+                    <Button variant="primary" className={classes.btn}>{t("mainPage.inBasket")}</Button>
                 </Card.Body>
             </Card>
         </>

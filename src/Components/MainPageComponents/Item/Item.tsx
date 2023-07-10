@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import classes from './Item.module.css'
 import { IItem } from 'models/interfaces/itemsInterfaces'
 
-export const Item: React.FC<IItem> = (item) => {
+export const Item: React.FC<IItem> = (item: IItem) => {
     const navigate = useNavigate()
     const [itemCount, setItemCount] = useState<number>(0)
     const increment = () => setItemCount(itemCount + 1)
@@ -18,7 +18,7 @@ export const Item: React.FC<IItem> = (item) => {
     const { t } = useTranslation()
     return (
         <Card className={classes.itemMainDiv}>
-            <Card.Img variant="top" src={item.img} className={classes.itemImg} onClick={navigateToItemPage} height={'130px'} width={'130px'}/> 
+            <Card.Img variant="top" src={item.img} className={classes.itemImg} onClick={navigateToItemPage} height={'130px'} width={'130px'} />
             <Card.Body className={classes.cardBody}>
                 <Card.Title className={classes.title} onClick={navigateToItemPage}>{item.itemName}</Card.Title>
                 <div className={classes.titlesWrapper}>

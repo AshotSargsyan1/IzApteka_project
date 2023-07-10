@@ -8,7 +8,7 @@ export const Footer: React.FC = (): JSX.Element => {
     const { t } = useTranslation()
 
     return (
-        <div style={{ width: '73%', margin: '0 auto' }}>
+        <div className={classes.mainDiv}>
             <div className={classes.footerMainDiv}>
                 <div className={classes.brandSide}>
                     <div className={classes.imgSide}>

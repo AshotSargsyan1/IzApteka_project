@@ -82,3 +82,19 @@ h3 {
     list-style-type: none;
     padding: 0;
 }
+
+.collectionsH3 {
+    margin: 75px 0px 25px
+}
+
+.whatIsAptekiH3 {
+    margin-top: 0
+}
+
+.makeAndOrderH3 {
+    margin: 25px 0 15px 0
+}
+
+.aboutLawP {
+    margin: 0
+}

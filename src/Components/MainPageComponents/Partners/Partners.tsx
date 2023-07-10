@@ -16,7 +16,7 @@ export const Partners: React.FC = () => {
 
     return (
         <div className={classes.ownPartners}>
-            <h3 style={{marginBottom: '25px'}}>{t("partners.ourPartners")}</h3>
+            <h3 className={classes.ourPartnersH3}>{t("partners.ourPartners")}</h3>
             <Figure className={classes.compilationForImages}>
                 {
                     imagesForCompilation.map(img => {

@@ -1,3 +1,1 @@
-import RoutingComponent from "./MainRoute";
-
-export { RoutingComponent }
+export { MainRoute } from "./MainRoute";

@@ -40,7 +40,7 @@ export const ItemPageHeader: React.FC<IItem> = (aboutItemSelector): JSX.Element 
                 <div>
                     <div className={classes.pillPrice}>
                         <div className={classes.priceDiv}>
-                            <span style={{ marginRight: '4px' }}>{t("itemPageHeader.from")}</span>
+                            <span className={classes.from}>{t("itemPageHeader.from")}</span>
                             <span className={classes.price}>{price} {t("item.rouble")}</span>
                         </div>
                         <div>

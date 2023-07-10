@@ -1,3 +1,8 @@
+.mainDiv {
+    width: 73%;
+    margin: 0 auto
+}
+
 .footerMainDiv {
     flex-shrink: 0;
     background: #00395D;

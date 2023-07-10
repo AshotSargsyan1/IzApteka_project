@@ -52,7 +52,7 @@
 }
 
 .aboutPill2SecondSide p {
-    color:rgba(0, 57, 93, 1);
+    color: rgba(0, 57, 93, 1);
     font-size: 14px;
     font-family: Montserrat;
     line-height: 24px;
@@ -123,4 +123,8 @@
 
 .incrAndDecrBtn {
     cursor: pointer;
+}
+
+.from {
+    margin-right: 4px
 }

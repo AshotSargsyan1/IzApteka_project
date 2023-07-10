@@ -1,9 +1,9 @@
-import MainRoute from "route/MainRoute";
+import { MainRoute } from "route";
 
-function App() {
+export const App: React.FC = (): JSX.Element => {
   return (
     <MainRoute />
   );
 }
 
-export default App;
+

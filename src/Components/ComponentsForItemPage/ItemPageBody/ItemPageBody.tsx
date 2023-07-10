@@ -15,8 +15,6 @@ export const ItemPageBody: React.FC<IItem> = (aboutItemSelector): JSX.Element =>
         sideEffects
     } = aboutItemSelector
 
-    console.log(sideEffects)
-
     return (
         <>
             <Accordion defaultActiveKey="0">
@@ -52,7 +50,7 @@ export const ItemPageBody: React.FC<IItem> = (aboutItemSelector): JSX.Element =>
                     <Accordion.Body className={classes.aboutsideEffects}>
                         {t("item.aboutContradication")}
                         <ul className={classes.aboutsideEffectsList}>
-                            {sideEffects.map(text => {
+                            {sideEffects.map((text: string) => {
                                 return <li>{text}</li>
                             })}
                         </ul>
